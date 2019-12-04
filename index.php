@@ -6,7 +6,9 @@
 URL:  <input type="text" name="url" value="HTTP://">
 PAGE  <input type="text" name="pageNumber" value="15">
 keywords <input type="text" name="keyWords" value="下一章">
-<br><br>
+<br>
+enCode <input type="text" name="enCode" value="GBK">
+<br>
 <input type="submit" value="Submit">
 </form>
 </body>
