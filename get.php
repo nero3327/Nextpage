@@ -29,13 +29,13 @@ for ($iP=0;$iP<$pageNumber;$iP++){
     	}
     	curl_close($curl);
         $outF = substr($out[0],6,-1);
-        if(stripos($outF,'://') === false){
+        if(stripos($outF,'://') === false){   // soutF is relative url 
         	$sLenUrl = strlen($url);
                 $sLenOut = strlen($outF);
-//              if(stripos($outF,'../') === false){$sLenOut = $sLenOut-3;}
+//                if(stripos($outF,'../') === ture){$sLenOut = $sLenOut-3;} 
                 $urlF =  substr($url, 0, -$sLenOut);
                 $url = $urlF.$outF;
-        } else {
+        } else {                              // soutF is absolut url
         	$url = $outF;
         }
 }
