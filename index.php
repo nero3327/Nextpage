@@ -9,7 +9,11 @@ PAGE  <input type="text" name="pageNumber" value="15">
 <br>
 keywords <input type="text" name="keyWords" value="下一章">
 <br>
-enCode <input type="text" name="enCode" value="GBK">
+enCode <input type="text" name="enCode" list="codeType" value="GBK">
+<datalist id="codeType">
+<option value="UTF-8">
+<option value="GBK">
+</datalist>
 <br>
 <input type="submit" value="Submit">
 </form>
